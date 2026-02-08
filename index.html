@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>esau portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/dc79f7fac3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <canvas id="matrix-canvas"></canvas>
     <!------------------------------------------header--------------------------------->
     <div id="header">
         <div class="container">
@@ -24,8 +28,8 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <!-----<p>UI/UX Designer</p>------->
-                <h1>Hi, I'm <br> <span> ESAU SAMWEL</span> </h1>
+                <!-----<p>Ethical Hacker</p>------->
+                <h1>Hi, I'm <br> <span class="hero-name"> ESAU SAMWEL</span><br><span class="blink-role">Ethical Hacker | Cybersecurity Enthusiast | CTF Player</span></h1>
             </div>
         </div>
     </div>
@@ -38,8 +42,8 @@
         </div>
             <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
-            <p>I’m a passionate <strong> Web Developer & Graphics Designer </strong>
-                 with a strong focus on creating modern, user-friendly websites and visually appealing designs. Skilled in HTML, CSS, JavaScript, PHP, MySQL, Adobe tools and Canva, I combine creativity with technical expertise to deliver solutions that are both functional and impactful.</p>
+            <p>I’m a passionate <strong> Ethical Hacker and Cybersecurity Enthusiast </strong>
+                 focused on penetration testing, offensive security labs, and practical defense strategies. I actively solve CTF challenges and build hands-on skills in web security, network analysis, reverse engineering, and secure system hardening using Linux-based tooling and scripting.</p>
                   <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')"><strong>Skills</strong></p>
                     <p class="tab-links" onclick="opentab('experience')"><strong>Experience</strong></p>
@@ -47,21 +51,26 @@
                   </div>
                   <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Web Development</span><br>Web app Development</li>
-                        <li><span>Graphics Designing</span><br>Logo, Posters, Flyers, Banners, Bussiness Card, Social Media Posts, Thumbnail, Label, and Packaging Designs</li>
+                        <li><span>Web Application Security</span><br>OWASP Top 10 testing, authentication flaws, and input validation analysis</li>
+                        <li><span>Network Security & Traffic Analysis</span><br>Packet inspection, reconnaissance fundamentals, and threat behavior tracking</li>
+                        <li><span>Penetration Testing</span><br>Beginner-to-intermediate lab exploitation and vulnerability validation workflows</li>
+                        <li><span>Linux & Kali Linux</span><br>Security tooling, command-line operations, and environment hardening practices</li>
+                        <li><span>Reverse Engineering Basics</span><br>Binary analysis fundamentals and logic tracing in controlled lab setups</li>
+                        <li><span>CTF Challenges</span><br>Web, cryptography, and forensics problem-solving under timed conditions</li>
+                        <li><span>Scripting</span><br>Python and Bash automation for reconnaissance, enumeration, and reporting tasks</li>
                     </ul>
                   </div>
                   <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2023-current</span><br>Provided creative design solutions for a wide range of clients, including individuals, startups, and established companies. Projects included logos, branding, posters, social media graphics, and marketing materials tailored to client needs. Focused on delivering unique, high-quality, and impactful designs that enhance brand identity and communication.</li>
-                        <li><span>2024-current</span><br>Developed and maintained modern, responsive, and user-friendly websites for diverse clients, ranging from individuals to businesses. Skilled in HTML, CSS, JavaScript, PHP, MySQL, and Laravel, with experience building websites that are secure, functional, and optimized for performance. Focused on creating custom digital solutions that align with client goals and enhance online presence.</li>
+                        <li><span>2023-current</span><br>Consistently solving CTF challenges across web exploitation, cryptography, and digital forensics while documenting methods, payload logic, and remediation insights for continuous improvement.</li>
+                        <li><span>2024-current</span><br>Practicing penetration testing in legal lab environments through security research, vulnerability assessment, exploitation practice, and foundational study of malware behavior, privilege escalation, and reverse engineering techniques.</li>
                     </ul>
                   </div>
                   <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2024-current</span><br>Bachelor Of Engineering In Computer Engineering At Dar es Salaam Institute Of Technology (DIT)</li>
-                        <li><span>2022-2024</span><br>Advanced level Education at Tanga Technical Secondary School</li>
-                         <li><span>2018-2021</span><br>Ordinary Level Education At Gorowa Secondary School</li>
+                        <li><span>2024-current</span><br>Bachelor of Engineering in Computer Engineering at Dar es Salaam Institute of Technology (DIT), with focused interest in cybersecurity, ethical hacking, and secure systems.</li>
+                        <li><span>2022-2024</span><br>Advanced level studies at Tanga Technical Secondary School, building strong technical foundations that support networking and security learning.</li>
+                         <li><span>2018-2021</span><br>Ordinary level education at Gorowa Secondary School, where early interest in computing evolved into a long-term cybersecurity path.</li>
                     </ul>
                   </div>
                 </div>
@@ -76,15 +85,15 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Creating visually appealing, responsive, and user-friendly websites that provide seamless experiences across devices. Skilled in combining design and functionality to build websites that effectively communicate brand identity. .</p>
+                <h2>Web Application Security Testing</h2>
+                <p>Testing web applications for common vulnerabilities such as injection flaws, authentication issues, and misconfigurations using structured security assessment methods.</p>
                <!--- <a href="">learn more</a>-->
             </div>
             <div>
                <i class="fa-solid fa-pen-nib"></i>
                
-                <h2>Graphics Design</h2>
-                <p>Designing creative visuals including logos, posters, social media graphics, and branding materials that communicate ideas effectively and enhance brand identity. .</p>
+                <h2>Vulnerability Assessment</h2>
+                <p>Beginner/practice-level penetration testing and lab-based security consulting focused on identifying risks, validating weaknesses, and recommending practical remediation steps.</p>
                
             </div>
         </div>
@@ -99,24 +108,24 @@
             <div class="work">
                <img src="img/logo 1.jpeg" alt=""> 
                <div class="layer">
-                <h3>Logo Designing</h3>
-                <p>Creating unique, memorable, and versatile logos that reflect brand identity and leave a lasting impression. Focused on combining creativity and simplicity to deliver impactful visual branding.</p>
+                <h3>CTF Writeups</h3>
+                <p>Detailed writeups of capture-the-flag challenges covering enumeration, exploitation paths, and lessons learned for repeatable cybersecurity workflows.</p>
                
                </div>
             </div>
             <div class="work">
                 <img src="img/poster 1.jpeg" alt=""> 
                 <div class="layer">
-                    <h3>Poster Designing</h3>
-                    <p>Designing eye-catching and impactful posters that effectively communicate messages, promote events, and enhance brand visibility. Focused on creativity, clarity, and visual appeal.</p>
+                    <h3>Web Exploitation Labs</h3>
+                    <p>Hands-on lab projects focused on identifying and exploiting web vulnerabilities, then applying mitigation strategies aligned with secure development practices.</p>
                    
                    </div>
              </div>
              <div class="work">
                 <img src="img/thumbnail 1.jpeg" alt=""> 
                 <div class="layer">
-                    <h3>Thumbnail Designing</h3>
-                    <p>Creating attractive and engaging thumbnails that grab attention, improve click-through rates, and visually represent content for platforms like YouTube and social media.</p>
+                    <h3>Network Traffic Analysis</h3>
+                    <p>Analysis of packet captures and suspicious traffic patterns to detect anomalies, investigate incidents, and strengthen defensive monitoring skills.</p>
                     
                    </div>
              </div>
@@ -155,7 +164,7 @@
         </div>-->
     </div>
     <div class="copyright">
-        <p>&copy; ESAU - 2025  </p>
+        <p>&copy; ESAU - 2025 | Ethical Hacking & Cybersecurity  </p>
     </div>
    </div>
    <!-----------------------------------javascript--------------------------------->
@@ -201,6 +210,43 @@ function opentab(tabname){
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script>
+    (function () {
+        const canvas = document.getElementById("matrix-canvas");
+        const ctx = canvas.getContext("2d");
+        const chars = "01ABCDEFGHIJKLMNOPQRSTUVWXYZ#$%&*";
+        const fontSize = 16;
+        let columns = 0;
+        let drops = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            columns = Math.floor(canvas.width / fontSize);
+            drops = Array.from({ length: columns }, function () { return 1; });
+        }
+
+        function drawMatrix() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.08)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#00ff00";
+            ctx.font = fontSize + "px monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+                const char = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+        setInterval(drawMatrix, 40);
+    })();
   </script>
 </body>
 </html>
